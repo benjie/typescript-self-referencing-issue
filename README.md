@@ -42,11 +42,11 @@ yarn
 yarn tsc
 ```
 
-Result:
+First run result:
 
 ```
 $ <path>/ts/node_modules/.bin/tsc
-src/print.ts:1:20 - error TS7016: Could not find a declaration file for module '@localrepo/ts'. '<path>/ts/dist/index.js' implicitly has an 'any' type.
+src/print.ts:1:20 - error TS2307: Cannot find module '@localrepo/ts' or its corresponding type declarations.
 
 1 import { nr } from "@localrepo/ts";
                      ~~~~~~~~~~~~~~~
@@ -58,5 +58,16 @@ error Command failed with exit code 2.
 ```
 
 
+Second run result:
+
+```
+$ <path>/ts/node_modules/.bin/tsc
+error TS5055: Cannot write file '<path>/ts/dist/index.d.ts' because it would overwrite input file.
+
+
+Found 1 error.
+
+error Command failed with exit code 1.
+```
 
 
