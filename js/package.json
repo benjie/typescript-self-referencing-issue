@@ -1,0 +1,7 @@
+{
+  "name": "@localrepo/js",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  }
+}
